@@ -73,8 +73,18 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'app/assets/sass',
+          src: ['style.scss'],
+          dest: 'app/assets/css',
+          ext: '.css'
+        }]
+      }
     }
-
   });
 
   // - - - - - - - - -  - - - - - - - - -  - - - - - - - - -
@@ -85,10 +95,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // - - - - - - - - -  - - - - - - - - -  - - - - - - - - -
 
-  grunt.registerTask('default', ['clean','copy:main','includes','connect','watch'])
+  grunt.registerTask('default', ['clean','sass','copy:main','includes','connect','watch'])
   grunt.registerTask('build', ['clean','copy:main','includes'] );
 
 
