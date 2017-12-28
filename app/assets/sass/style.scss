@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
             text-shadow: none;
         }
         
-        &:after {
+        /*&:after {
             border: 2px solid $secondary-color;
             border-radius: 2px;
             position: absolute;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
             width: 80px;
             margin: 18px auto 18px auto;
             z-index: -1;
-        }
+        }*/
         
         &.line {
             margin-top: 45px;
