@@ -144,7 +144,7 @@ var $ = jQuery.noConflict();
         });
         $('#flexslider-nav').flexslider({
             animation: "slide",
-            reverse: true,
+            reverse: false,
             easing: "swing",
             controlNav: false, 
             animationSpeed: 1000,
@@ -319,7 +319,7 @@ var $ = jQuery.noConflict();
     /*-------------------------------------------------*/
     /* =  Contact Form
     /*-------------------------------------------------*/
-    var submitContact = $('#submit-contact'),
+    /* var submitContact = $('#submit-contact'),
         message = $('#msg');
 
     submitContact.on('click', function(e){
@@ -343,13 +343,27 @@ var $ = jQuery.noConflict();
                 }
             }
         });
-    });
+    }); */
 })(jQuery);
 
 $(document).ready(function($) {
     "use strict";
     
     var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    // Active page
+    (function(){
+        var current = location.pathname;
+        $('header li a').each(function(){
+            
+            var $this = $(this);
+            console.log($this.attr('href').indexOf(current));
+            // if the current path is like this link, make it active
+            if($this.attr('href').indexOf(current) !== -1){
+                $this.addClass('active-item');
+            }
+        })
+    })();
     
     /*-------------------------------------------------*/
     /* =  fullpage
