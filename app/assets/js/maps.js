@@ -7,7 +7,7 @@ var $ = jQuery.noConflict();
     /* =  Contact Map
     /*-------------------------------------------------*/
 
-    var contact = {"lat":"46.5324102", "lon":"12.1072064"}; //Change a map coordinate here!
+    var contact = {"lat":"43.198502", "lon":"24.068809"}; //Change a map coordinate here!
 
         var map;
         var MY_MAPTYPE_ID = 'custom_style';
