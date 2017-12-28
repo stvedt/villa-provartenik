@@ -64,6 +64,16 @@ module.exports = function(grunt) {
         ]
       }
     },
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          hostname: '*',
+          base: 'build',
+          livereload: true
+        }
+      }
+    }
 
   });
 
@@ -73,11 +83,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-includes');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // - - - - - - - - -  - - - - - - - - -  - - - - - - - - -
 
-
-  grunt.registerTask('default', ['clean','copy:main','includes'] );
+  grunt.registerTask('default', ['clean','copy:main','includes','connect','watch'])
+  grunt.registerTask('build', ['clean','copy:main','includes'] );
 
 
 
