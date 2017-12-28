@@ -1,17 +1,21 @@
 {
   "name": "provartenik",
   "version": "1.0.0",
-  "description": "",
+  "description": "Villa Provartenik Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-includes": "^1.0.0"
   }
 }
