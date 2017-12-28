@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "app",
+    "public": "build",
     "ignore": [
       "**/.*",
       "**/node_modules/**"
