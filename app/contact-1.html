@@ -94,21 +94,19 @@
                             <!--  Input Form  -->
                             <div class="col-md-6 padding-leftright-null">
                                 <div class="text padding-onlybottom-sm padding-md-top-null">
-                                    <form id="contact-form" class="padding-onlytop-md padding-md-topbottom-null">
+                                    <form id="contact-form" class="padding-onlytop-md padding-md-topbottom-null" action="https://formspree.io/svensat@gmail.com" method="POST">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input class="form-field" name="name" id="name" type="text" placeholder="Name">
                                             </div>
                                             <div class="col-md-12">
-                                                <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
+                                                <input class="form-field" name="email" id="mail" type="email" placeholder="Email" required>
                                             </div>
                                             <div class="col-md-12">
-                                                <input class="form-field" name="subjectForm" id="subjectForm" type="text" placeholder="Subject">
+                                                <input class="form-field" name="phone" id="phone" type="number" placeholder="Phone Number">
                                             </div>
-                                        </div>
-                                        <div class="row">
                                             <div class="col-md-12">
-                                                <textarea class="form-field" name="messageForm" id="messageForm" rows="6" placeholder="Your Message"></textarea>
+                                                <textarea class="form-field" name="message" id="messageForm" rows="6" placeholder="Your Message"></textarea>
                                                 <div class="submit-area padding-onlytop-sm">
                                                     <input type="submit" id="submit-contact" class="btn-alt" value="Send Message">
                                                     <div id="msg" class="message"></div>
