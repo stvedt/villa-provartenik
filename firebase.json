@@ -1,1 +1,9 @@
-{}
+{
+  "hosting": {
+    "public": "app",
+    "ignore": [
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
