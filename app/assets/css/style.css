@@ -1649,14 +1649,14 @@ header {
       header nav.navbar #logo a.navbar-brand {
         height: 80px;
         line-height: 80px;
-        padding: 20px 0; }
+        padding: 10px 0; }
         @media screen and (max-width: 480px) {
           header nav.navbar #logo a.navbar-brand {
             height: 60px;
             line-height: 60px;
             padding: 10px 0; } }
         header nav.navbar #logo a.navbar-brand img {
-          max-height: 40px;
+          max-height: 55px;
           width: auto; }
           @media screen and (max-width: 480px) {
             header nav.navbar #logo a.navbar-brand img {
