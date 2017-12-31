@@ -2436,9 +2436,6 @@ header {
   background-color: white; }
   #page-content.footer-fixed {
     margin-bottom: 390px; }
-    @media screen and (max-width: 1199px) {
-      #page-content.footer-fixed {
-        margin-bottom: 260px; } }
     @media screen and (max-width: 991px) {
       #page-content.footer-fixed {
         margin-bottom: 0; } }
