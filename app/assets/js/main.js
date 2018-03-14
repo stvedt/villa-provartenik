@@ -354,7 +354,7 @@ $(document).ready(function($) {
     // Active page
     (function(){
         var current = location.pathname;
-        if ( current === '/'){
+        if ( current === '/' || current === '/en/'){
             current = '/index.html';
         }
         $('header li a').each(function(){
