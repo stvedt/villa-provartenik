@@ -45,9 +45,8 @@ module.exports = function(grunt) {
 
     includes: {
       files: {
-        src: '*.html',
+        src: '**/*.html',
         dest: destinationDirectory,
-        flatten: true,
         cwd: sourceDirectory,
         options: {
           silent: true,
