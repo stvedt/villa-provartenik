@@ -2435,7 +2435,7 @@ header {
   z-index: 2;
   background-color: white; }
   #page-content.footer-fixed {
-    margin-bottom: 390px; }
+    margin-bottom: 290px; }
     @media screen and (max-width: 991px) {
       #page-content.footer-fixed {
         margin-bottom: 0; } }
